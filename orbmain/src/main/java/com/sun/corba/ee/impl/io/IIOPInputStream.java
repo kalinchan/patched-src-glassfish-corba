@@ -1204,7 +1204,8 @@ public class IIOPInputStream
     private boolean readDefaultWriteObjectCalledFlag() throws IOException {
         boolean sentDefaultWriteObjectCalled = readBoolean();
 
-        if (isDateClassWorkaroundRequired()) return getSimulatedDefaultWriteObjectCalledFlag();
+        if (isDateClassWorkaroundRequired()) 
+            return getSimulatedDefaultWriteObjectCalledFlag();
         return sentDefaultWriteObjectCalled;
     }
 
